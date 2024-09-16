@@ -177,12 +177,16 @@
                                                 <span class="stt-price">{{ convertPrice(session('total_price')) }}</span>
                                             </div>
                                         </li>
+                                       
                                         <li>
                                             <div class="subtotal-line">
                                                 <b class="stt-name">Ưu đãi</b>
-                                                <span class="stt-price">-{{ convertPrice(session('diss')) }} ({{ session('coupon')->discount_amount }}% {{ session('coupon')->name }})</span>
+                                                <span class="stt-price">
+                                                    -{{ convertPrice(session('diss', 0)) }} ( {{  session('coupon')->discount_amount ?? 0 }}%)
+                                                </span>
                                             </div>
                                         </li>
+
                                         <li>
                                             <div class="subtotal-line">
                                                 <b class="stt-name">Thanh Toán</b>

@@ -105,26 +105,25 @@ class CartController extends Controller
 
     public function applyCoupon(Request $request)
     {
-        // Validate dữ liệu từ form
         $validatedData = $request->validate([
-            'coupon_name' => 'required', // Validation cho coupon_name
+            'coupon_name' => 'nullable', // Validation cho phép coupon_name có thể null
         ]);
     
-        $couponName = $validatedData['coupon_name'];
+        // Nếu không có 'coupon_name', gán giá trị null cho biến $couponName
+        $couponName = $validatedData['coupon_name'] ?? null;
     
-        // Kiểm tra xem mã giảm giá đã được chọn trước đó hay chưa
-        if (session()->has('coupon') && session('coupon')->name === $couponName) {
-            toastr()->error('Bạn đã áp dụng mã giảm giá này rồi.');
+        // Tiếp tục xử lý mã giảm giá...
+        if ($couponName === null) {
+            toastr()->error('Vui lòng nhập mã giảm giá.');
             return redirect()->back();
-        }
-    
-        // Tìm mã giảm giá trong cơ sở dữ liệu
-        $coupon = Voucher::where('name', $couponName)->first();
-    
+        }else{
+        
+               // Tìm mã giảm giá trong cơ sở dữ liệu
+        $coupon = Voucher::where('name',$couponName)->first();
         if (!$coupon) {
-            toastr()->error('Không tìm thấy mã giảm giá phù hợp.');
+            toastr()->error('Mã giảm giá không tồn tại.');
         } elseif (!$coupon->is_active) {
-            toastr()->error('Mã giảm giá không hoạt động.');
+            toastr()->error('Mã giảm giá đã hết hạn.');
         } else {
             // Lưu mã giảm giá vào session
             session()->put('coupon', $coupon);
@@ -139,13 +138,18 @@ class CartController extends Controller
                 $dis=  $total_price -$discounted_price;
                 session()->put('total_price_coupon', $discounted_price);
                 session()->put('diss', $dis);
+              //  dd($discounted_price);
             }
     
             toastr()->success('Áp dụng mã giảm giá thành công.');
-          //  session()->forget(['cart','total_price','total_price_coupon','coupon']);
+           /*session()->forget(['cart','total_price','total_price_coupon','coupon']); */
         }
+          
     
         return redirect()->back();
+
+        }
+     
     }
     
     

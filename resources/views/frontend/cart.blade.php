@@ -74,7 +74,7 @@
             <div class="shopping-cart-container">
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <h3 class="box-title">Your cart items</h3>
+                        <h3 class="box-title">Giỏ hàng của bạn</h3>
 
                         <table class="shop_table cart-form">
                             <thead>
@@ -123,29 +123,20 @@
                                     </td>
                                 </tr>
                                 @endforeach
-                                <tr class="cart_item wrap-buttons">
-                                    <td class="wrap-btn-control" colspan="2">
+                                <td class="wrap-btn-control" colspan="2">
                                         <a href="{{ route('shop') }}" class="btn back-to-shop">Tiếp Tục Mua Hàng</a>
-                                    </td>
-                                    <td class="wrap-btn-control" colspan="4">
-                                        <form action="{{ route('apply.coupon') }}" method="POST">
-                                            @csrf
-                                            <select name="coupon_name" id="coupon_name" class="custom-select">
-                                                <option value="">Chọn mã giảm giá</option>
-                                                @foreach ($coupons as $coupon)
-                                                @php
-                                                $selected = session('coupon') && session('coupon')->name == $coupon->name ? 'selected' : '';
-                                                @endphp
-                                                <option value="{{ $coupon->name }}" {{ $selected }}>
-                                                    {{ $coupon->name }} (giảm {{ $coupon->discount_amount }}%)
-                                                </option>
-                                                @endforeach
-                                            </select>
-                                            <div class="input-group-append">
-                                                <button type="submit" class="btn btn-primary">Áp dụng</button>
-                                            </div>
-                                        </form>
-                                    </td>
+                                </td>
+                                <td class="wrap-btn-control" >
+                                <form action="{{ route('apply.coupon') }}" method="POST">
+                                    @csrf
+                                    <input type="text" value="{{ old('coupon_name')}}" name="coupon_name" id="coupon_name" class="form-control" placeholder="Nhập mã giảm giá">
+                                    <td class="wrap-btn-control" >
+                                    <button type="submit" class="btn btn-primary">Áp dụng</button>
+                                    </td>            
+                                </form>
+                                </td>
+
+                                    
                                 </tr>
                             </tbody>
                         </table>
@@ -163,12 +154,12 @@
                             </div>
                             <div class="subtotal-line">
                                 <b class="stt-name">Giảm giá <span class="sub"></span></b>
-                                <span class="stt-price">-{{convertPrice(session('diss'))}}</span>
+                                <span class="stt-price"> -{{convertPrice(session('diss'))}} </span>
                             </div>
                             <div class="subtotal-line">
                                 <b class="stt-name">Thanh Toán:</b>
                                 <span class="stt-price">
-                                    @if(session()->has('total_price_coupon') && session('total_price_coupon') != 0)
+                                    @if(session()->has('total_price_coupon'))
                                     <span>{{ convertPrice(session('total_price_coupon')) }}</span><br>
                                     @else
                                     <span>{{ convertPrice(session('total_price')) }}</span>
