@@ -1,0 +1,36 @@
+
+	:root { 
+		--longthinh-web-m3-mau-nut: #f37f9a;   /* mau nut #f37f9a*/
+		--longthinh-web-m3-mau-text: #f37f9a;  /* mau nền text #f37f9a*/
+		--longthinh-web-m3-phai: 20px;
+		--longthinh-web-m3-duoi: 130px;
+	}
+    .btn-quick-alo-phone { visibility: hidden; cursor: pointer; z-index: 999; -webkit-backface-visibility: hidden; -webkit-transform: translateZ(0); transition: visibility .5s; bottom: 95px; right: 0; }
+    .btn-quick-alo-ph-circle, .btn-quick-alo-phone { background-color: transparent; width: 80px; height: 80px; }
+    .btn-quick-alo-phone.btn-quick-alo-show { visibility: visible; }
+    .btn-quick-alo-ph-circle { bottom: 0; left: 0; position: absolute; border-radius: 100%; border: 2px solid #bfebfc; opacity: .1; -webkit-animation: btn-quick-alo-circle-anim 1.2s ease-in-out infinite; animation: btn-quick-alo-circle-anim 1.2s ease-in-out infinite; transition: all .5s; transform-origin: 50% 50%; }
+    @-webkit-keyframes btn-quick-alo-circle-anim{0%{transform:rotate(0) scale(.5) skew(1deg);opacity:.1}30%{transform:rotate(0) scale(.7) skew(1deg);opacity:.5}to{transform:rotate(0) scale(1) skew(1deg);opacity:.1}}@keyframes btn-quick-alo-circle-anim{0%{transform:rotate(0) scale(.5) skew(1deg);opacity:.1}30%{transform:rotate(0) scale(.7) skew(1deg);opacity:.5}to{transform:rotate(0) scale(1) skew(1deg);opacity:.1}}
+    .btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-circle { border-color: #f37f9a ; opacity: .5; }
+    .btn-quick-alo-ph-circle-fill { width: 60px; height: 60px; top: 10px; left: 10px; position: absolute; background-color: #000; border-radius: 100%; border: 2px solid transparent; opacity: .1; -webkit-animation: btn-quick-alo-circle-fill-anim 2.3s ease-in-out infinite; animation: btn-quick-alo-circle-fill-anim 2.3s ease-in-out infinite; transition: all .5s; transform-origin: 50% 50%; }
+    @-webkit-keyframes btn-quick-alo-circle-fill-anim{0%{transform:rotate(0) scale(.7) skew(1deg);opacity:.2}50%{transform:rotate(0) scale(1) skew(1deg);opacity:.2}to{transform:rotate(0) scale(.7) skew(1deg);opacity:.2}}
+    .btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-circle-fill { background-color: #f37f9a ; opacity: .75!important; }
+    .btn-quick-alo-ph-img-circle { width: 75px; height: 75px; top: 70px; left: 70px; position: absolute; background-repeat: no-repeat; background-position: 50%; border-radius: 100%; border: 2px solid transparent; opacity: 1; -webkit-animation: btn-quick-alo-circle-img-anim 1s ease-in-out infinite; animation: btn-quick-alo-circle-img-anim 1s ease-in-out infinite; transform-origin: 50% 50%; }
+    .btn-quick-alo-ph-img-circle { width: 40px; height: 40px; background-size: 30px; top: 20px; left: 20px; }
+    .btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-img-circle { background-color: #f37f9a ; }
+    @-webkit-keyframes btn-quick-alo-circle-img-anim{0%{-webkit-transform:rotate(0) scale(1) skew(1deg)}10%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)}20%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)}30%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)}40%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)}50%{-webkit-transform:rotate(0) scale(1) skew(1deg)}to{-webkit-transform:rotate(0) scale(1) skew(1deg)}}
+
+    .quick-alo-show { width: 80px; height: 80px; z-index: 999; position: relative; margin-top: 0; visibility: visible; }
+    .quick-alo-ph-circle { width: 80px; height: 80px; bottom: 0; left: 0; position: absolute; background-color: transparent; border-radius: 100%; border: 9 solid #bfebfc; opacity: .1; -webkit-animation: quick-alo-circle-anim 1.2s ease-in-out infinite; animation: quick-alo-circle-anim 1.2s ease-in-out infinite; transition: all .5s; transform-origin: 50% 50%; }
+    @-webkit-keyframes quick-alo-circle-anim{0%{-webkit-transform:rotate(0) scale(.5) skew(1deg);-webkit-opacity:.1}30%{-webkit-transform:rotate(0) scale(.7) skew(1deg);-webkit-opacity:.5}to{-webkit-transform:rotate(0) scale(1) skew(1deg);-webkit-opacity:.1}}
+
+    .quick-alo-green .quick-alo-ph-circle { border: 2px solid var(--longthinh-web-m3-mau-nut) ; opacity: .5; }
+    .quick-alo-ph-circle-fill { width: 60px; height: 60px; bottom: 10px; left: 10px; position: absolute; background-color: #000; border-radius: 100%; border: 2px solid transparent; opacity: .1; -webkit-animation: quick-alo-circle-fill-anim 2.3s ease-in-out infinite; animation: quick-alo-circle-fill-anim 2.3s ease-in-out infinite; transition: all .5s; transform-origin: 50% 50%; }
+    .quick-alo-show a { display: block; text-decoration: none; }
+    .quick-alo-green .quick-alo-ph-circle-fill { background-color: var(--longthinh-web-m3-mau-nut) ; opacity: .4 !important; }
+    .quick-alo-ph-img-circle { width: 40px; height: 40px; bottom: 20px; left: 20px; position: absolute; border-radius: 100%; border: 2px solid transparent; opacity: .99; -webkit-animation: quick-alo-circle-img-anim 1s ease-in-out infinite; animation: quick-alo-circle-img-anim 1s ease-in-out infinite; transform-origin: 50% 50%; display: flex; align-items: center; justify-content: center; }
+    .quick-alo-ph-img-circle i { font-size: 20px; color: #fff; }
+    @-webkit-keyframes quick-alo-circle-fill-anim{0%{-webkit-transform:rotate(0) scale(.7) skew(1deg);opacity:.2}50%{-webkit-transform:rotate(0) scale(1) skew(1deg);opacity:.2}to{-webkit-transform:rotate(0) scale(.7) skew(1deg);opacity:.2}}
+    .quick-alo-green .quick-alo-ph-img-circle { background-color: var(--longthinh-web-m3-mau-nut) !important; background-size: 32px !important; }
+    .dv-float-button { position: fixed; cursor: pointer; z-index: 999; bottom: var(--longthinh-web-m3-duoi); right: var(--longthinh-web-m3-phai); }
+    .quick-alo-show a b { font-weight: normal; white-space: nowrap; position: absolute; top: 20px; right: 80px; background: var(--longthinh-web-m3-mau-text); color: #fff; padding: 0 15px; align-items: center; justify-content: center; height: 35px; line-height: 1.4; border-radius: 7px; display: none}
+    .quick-alo-show a:hover b { display: flex; }

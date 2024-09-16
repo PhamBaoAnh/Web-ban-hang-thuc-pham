@@ -1,0 +1,83 @@
+
+    .breadcrumb__text h2 {
+        font-size: 36px; /* Increased header font size */
+        font-weight: bold; /* Added bold font weight for emphasis */
+        color: #333; /* Changed color to a darker shade for better contrast */
+    }
+
+    .breadcrumb__option a, .breadcrumb__option span {
+        font-size: 18px; /* Increased font size for links and spans */
+        margin-right: 10px; /* Increased margin between links */
+        color: #7fad39; /* Unified color for links and spans */
+        text-decoration: none; /* Removed underline from links */
+    }
+
+    .breadcrumb__option a:hover {
+        color: #555; /* Darker shade on hover */
+    }
+
+    .nav-tabs .nav-item {
+        margin-right: 15px; /* Increased space between tabs */
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 18px; /* Increased font size for tab links */
+        padding: 10px 20px; /* Increased padding for tab links */
+        color: #7fad39; /* Set color for tab links */
+        border-radius: 5px; /* Added border-radius for rounded corners */
+        border: 1px solid #ddd; /* Added border */
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #7fad39; /* Background color for active tab */
+        color: #fff; /* White text color for active tab */
+        border: 1px solid #7fad39; /* Matching border color */
+    }
+
+    .alert {
+        font-size: 18px; /* Increased font size for alerts */
+        padding: 15px; /* Added padding for alerts */
+        border-radius: 5px; /* Added border-radius for alerts */
+    }
+
+    .user-avatar-img img {
+        max-width: 200px; /* Set maximum width for the avatar image */
+        max-height: 200px; /* Set maximum height for the avatar image */
+        border-radius: 50%; /* Made avatar image circular */
+        border: 2px solid #7fad39; /* Added border around avatar */
+    }
+
+    .table th, .table td {
+        vertical-align: middle; /* Center text vertically */
+        text-align: center; /* Center text horizontally */
+    }
+
+    .table th {
+        background-color: #f8f8f8; /* Light background for table headers */
+        color: #333; /* Darker text color for headers */
+    }
+
+    .status {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .status.cancel { background-color: #ff6b6b; } /* Red for canceled */
+    .status.return { background-color: #f0ad4e; } /* Orange for returned */
+    .status.pending { background-color: #fbc02d; } /* Yellow for pending */
+    .status.inprogress { background-color: #5bc0de; } /* Blue for in progress */
+    .status.delivered { background-color: #5cb85c; } /* Green for delivered */
+
+    .btn {
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .btn.cancel { background-color: #ff6b6b; color: #fff; } /* Red for cancel */
+    .btn.return { background-color: #f0ad4e; color: #fff; } /* Orange for return */
+    .btn.receive { background-color: #5bc0de; color: #fff; } /* Blue for receive */
+    .btn-primary { background-color: #007bff; } /* Standard primary button */
