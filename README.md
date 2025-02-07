@@ -20,4 +20,13 @@
 
 ## Hình ảnh
 
-- <img src="https://drive.google.com/file/d/1m22vNv5cdsBckxL_yglQCa9s1COQmx4e/view" alt="..." width="250" />
+![Image](https://github.com/user-attachments/assets/9a4b0eb1-26fb-42f1-bfae-77375ee5ed3d)
+## 
+
+![Image](https://github.com/user-attachments/assets/919ba007-7c52-48c7-ba08-99947ce91b3d)
+## 
+
+![Image](https://github.com/user-attachments/assets/66c6e4d3-b81c-4d7d-afda-195baeac55d3)
+## 
+
+![Image](https://github.com/user-attachments/assets/3d4a20ec-df4f-4a6f-974d-0d61a37fd614)
