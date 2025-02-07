@@ -1,60 +1,23 @@
 # Web-ban-hang-thuc-pham
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Các chức năng chính
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Quản lý tài khoản: Dành cho quản trị viên bao gồm đăng nhập bằng tài khoản dành riêng cho admin, phân quyền cho nhân viên (admin, nhân viên), đổi mật khẩu và đăng xuất tài khoản.
+- Quản lý sản phẩm: Cho phép quản trị viên thêm, sửa, xóa sản phẩm và cập nhật thông tin sản phẩm như tên, mô tả, giá, hình ảnh và số lượng tồn.
+- Quản lý danh mục và thương hiệu: Quản trị viên được thêm, sửa, xóa danh mục sản phẩm và thương hiệu.
+- Quản lý khách hàng: Quản trị viên có thể xem danh sách khách hàng, xem chi tiết thông tin về khách hàng và chỉnh sửa thông tin khách hàng khi cần thiết (trừ các thông tin nhạy cảm).
+- Quản lý đơn hàng: Quản trị viên xem danh sách đơn hàng, xem chi tiết từng đơn hàng và cập nhật trạng thái đơn hàng.
+- Quản lý nhân viên: Quản trị viên có thể thêm, sửa, xóa thông tin nhân viên.
+- Báo cáo thống kê: Cung cấp cho quản trị viên các thống kê về doanh thu, sản phẩm bán chạy và những khách hàng đặt hàng nhiều nhất để hỗ trợ việc đánh giá hiệu quả kinh doanh.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tài liệu quản lý dự án ( mô hình Agile ) 
 
-## Learning Laravel
+- https://drive.google.com/file/d/102iuLjl8akPRNtPAIMTQkcBDyTPcSV8x/view?usp=sharing
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tài liệu kiểm thử hệ thống
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- https://drive.google.com/file/d/1KYkrsPqCC9bqJQCJAhXDoPHD-F3i_u8M/view?usp=sharing
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Hình ảnh
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# fruit_store" 
->>>>>>> c2c5551 (Initial commit)
+- <img src="https://drive.google.com/file/d/1m22vNv5cdsBckxL_yglQCa9s1COQmx4e/view" alt="..." width="250" />
